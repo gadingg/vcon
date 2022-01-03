@@ -42,7 +42,7 @@ const functionGetOtp = (email) => new Promise((resolve, reject) => {
                'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
                'accept-encoding': 'gzip, deflate, br',
                'accept-language': 'en-US,en;q=0.9',
-               'cookie': `_ga=GA1.2.1434039633.1579610017; _gid=GA1.2.374838364.1579610017; _gat=1; surl=cakk.us%2F${email}`,
+               'cookie': `_ga=GA1.2.1434039633.1579610017; _gid=GA1.2.374838364.1579610017; _gat=1; surl=gmailni.com%2F${email}`,
                'sec-fetch-mode': 'navigate',
                'sec-fetch-site': 'same-origin',
                'upgrade-insecure-requests': 1,
@@ -91,7 +91,7 @@ const functionVerif = (token, otp) => new Promise((resolve, reject) => {
     const reff = readline.question('Reff : ')
    for (var i = 0; i < 100000000; i++){
     try {
-        const email = `${randomize('a0', 8)}@cakk.us`
+        const email = `${randomize('a0', 8)}@gmailni.com`
         console.log(email)
         const regist = await functionRegist(email,  reff)
         console.log(regist)
